@@ -23,3 +23,27 @@ bundle install
 rails db:create db:migrate
 rails s
 
+---
+
+## 🧠 Endpoints de ejemplo
+
+Una vez que el servidor esté corriendo (`rails s`), puedes probar el API base:
+
+### 🔹 Listar experiencias
+
+> Devuelve un arreglo JSON con todas las experiencias creadas.
+
+### 🔹 Crear una experiencia (ejemplo)
+
+---
+
+## 🚀 Despliegue futuro
+- Preparado para **Docker** o despliegue en **Render**, **Fly.io**, o **Heroku (Buildpacks)**.
+- API lista para conectar con **frontend React / Next.js / Vite** en la carpeta `frontend/`.
+
+---
+
+## 💡 Autor
+**Jeremy André Barranzuela Condori**  
+Proyecto: *Jump — Event Management Platform for Underground Scenes*  
+GitHub: [@JBarranzuela](https://github.com/JBarranzuela)

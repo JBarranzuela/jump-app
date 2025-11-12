@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump App - Experiencias de Viaje</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌍 Jump App</h1>
+        <p>Gestiona tus experiencias de viaje</p>
+      </header>
+
+      <main>
+        <section class="form-section">
+          <h2>Agregar Nueva Experiencia</h2>
+          <form id="experienceForm">
+            <div class="form-group">
+              <label for="title">Título *</label>
+
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Ej: Viaje a París"
+                autocomplete="on"
+                required
+              >
+              <span class="error-message" id="title-error"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="country">País *</label>
+
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="Ej: Francia"
+                  autocomplete="on"
+                  required
+                >
+                <span class="error-message" id="country-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="price">Precio (USD) *</label>
+
+                <input
+                  type="number"
+                  id="price"
+                  name="price"
+                  placeholder="Ej: 1500"
+                  step="0.01"
+                  min="0"
+                  autocomplete="on"
+                  required
+                >
+                <span class="error-message" id="price-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Descripción *</label>
+
+              <textarea
+                id="description"
+                name="description"
+                placeholder="Describe tu experiencia..."
+                required
+              ></textarea>
+              <span class="error-message" id="description-error"></span>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              Agregar Experiencia
+            </button>
+          </form>
+        </section>
+
+        <div id="message"></div>
+
+        <section class="experiences-section">
+          <h2>Experiencias Registradas</h2>
+          <div id="experiences-container" class="experiences-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

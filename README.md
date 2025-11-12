@@ -1,24 +1,25 @@
-# README
+# 🚀 Jump App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend de **Jump**, la plataforma para la nueva generación de eventos underground en Lima y Latinoamérica 🌌
 
-Things you may want to cover:
+Construido con **Ruby on Rails 7** y **PostgreSQL**, en modo API.  
+Este backend maneja la gestión de experiencias, tickets y promotores para la escena electrónica alternativa.
 
-* Ruby version
+---
 
-* System dependencies
+## 🧩 Stack técnico
+- **Ruby** 3.3.5  
+- **Rails** 7.1.5.2 (API mode)  
+- **PostgreSQL** como base de datos  
+- **Puma** como servidor  
+- **Docker ready** (opcional)
 
-* Configuration
+---
 
-* Database creation
+## ⚙️ Cómo correr el proyecto localmente
 
-* Database initialization
+```bash
+bundle install
+rails db:create db:migrate
+rails s
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
